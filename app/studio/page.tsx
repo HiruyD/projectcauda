@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { useLanguage } from "../contexts/LanguageContext"
+import Image from "next/image";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const studioSections = [
   {
@@ -9,10 +9,10 @@ const studioSections = [
     descriptionKey: "bikeRoomDescription",
     images: [
       {
-        src: "/images/menarolfitness-11-12-2024-0002.jpeg",
+        src: "/images/menarolfitness-11-12-2024-0002.jpg",
       },
       {
-        src: "/images/3q7a3896.jpeg",
+        src: "/images/3q7a3896.jpg",
       },
     ],
   },
@@ -21,10 +21,10 @@ const studioSections = [
     descriptionKey: "aerobicsStudioDescription",
     images: [
       {
-        src: "/images/3q7a3855.jpeg",
+        src: "/images/3q7a3855.jpg",
       },
       {
-        src: "/images/3q7a3884.jpeg",
+        src: "/images/3q7a3884.jpg",
       },
     ],
   },
@@ -33,24 +33,24 @@ const studioSections = [
     descriptionKey: "weightsRoomDescription",
     images: [
       {
-        src: "/images/3q7a3865.jpeg",
+        src: "/images/3q7a3865.jpg",
       },
       {
-        src: "/images/img-6510.jpeg",
+        src: "/images/img-6510.jpg",
       },
     ],
   },
-]
+];
 
 export default function StudioPage() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-white">
       {/* Hero Section */}
       <div className="relative h-[60vh]">
         <Image
-          src="/images/3q7a3866.jpeg"
+          src="/images/3q7a3866.jpg"
           alt="Gym equipment"
           fill
           className="object-cover"
@@ -67,13 +67,25 @@ export default function StudioPage() {
         {studioSections.map((section) => (
           <div key={section.titleKey} className="mb-24">
             <div className="container mx-auto px-4 mb-8">
-              <h2 className="text-4xl font-bold mb-4 text-center">{t[section.titleKey]}</h2>
-              <p className="text-gray-300 text-center max-w-3xl mx-auto">{t[section.descriptionKey]}</p>
+              <h2 className="text-4xl font-bold mb-4 text-center">
+                {t[section.titleKey]}
+              </h2>
+              <p className="text-gray-300 text-center max-w-3xl mx-auto">
+                {t[section.descriptionKey]}
+              </p>
             </div>
             <div className="space-y-8">
               {section.images.map((image, imgIndex) => (
-                <div key={imgIndex} className="relative h-[60vh] w-full overflow-hidden">
-                  <Image src={image.src || "/placeholder.svg"} alt={t[image.altKey]} fill className="object-cover" />
+                <div
+                  key={imgIndex}
+                  className="relative h-[60vh] w-full overflow-hidden"
+                >
+                  <Image
+                    src={image.src || "/placeholder.svg"}
+                    alt={t[image.altKey]}
+                    fill
+                    className="object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
                 </div>
               ))}
@@ -82,5 +94,5 @@ export default function StudioPage() {
         ))}
       </div>
     </div>
-  )
+  );
 }
