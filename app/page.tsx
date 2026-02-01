@@ -1,22 +1,22 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { useLanguage } from "./contexts/LanguageContext"
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { PhoneCall, Mail, MapPin } from "lucide-react"
-import Link from "next/link"
-import { useRef, useEffect } from "react"
+import { Button } from "@/components/ui/button";
+import { useLanguage } from "./contexts/LanguageContext";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { PhoneCall, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
+import { useRef, useEffect } from "react";
 
 export default function Home() {
-  const { t, language } = useLanguage()
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const { t, language } = useLanguage();
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.75
+      videoRef.current.playbackRate = 0.75;
     }
-  }, [])
+  }, []);
 
   return (
     <div className="flex flex-col">
@@ -26,7 +26,11 @@ export default function Home() {
         <motion.div
           initial={{ y: 0 }}
           animate={{ y: -20 }}
-          transition={{ yoyo: Number.POSITIVE_INFINITY, duration: 20, ease: "linear" }}
+          transition={{
+            yoyo: Number.POSITIVE_INFINITY,
+            duration: 20,
+            ease: "linear",
+          }}
           className="absolute inset-0"
         >
           <Image
@@ -72,8 +76,14 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-br from-gray-900 to-slate-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <h2 className="text-4xl font-light mb-6 text-white">{t.luxuryFitness}</h2>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl font-light mb-6 text-white">
+                {t.luxuryFitness}
+              </h2>
               <p className="text-gray-300 mb-8">{t.luxuryFitnessDescription}</p>
               <Link href="/members">
                 <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold">
@@ -97,7 +107,7 @@ export default function Home() {
                 aria-label={t.fitnessVideoLabel}
               >
                 <source
-                  src="/images/menarolfitness-11-12-2024-0001.mp4"
+                  src="./images/menarolfitness-11-12-2024-0001.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
@@ -110,7 +120,9 @@ export default function Home() {
       {/* Classes Preview */}
       <section className="py-24 bg-gradient-to-br from-slate-800 to-gray-900">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-light mb-12 text-center">{t.exceptionalClasses}</h2>
+          <h2 className="text-4xl font-light mb-12 text-center">
+            {t.exceptionalClasses}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { en: "Strength", am: "ጥንካሬ" },
@@ -128,7 +140,7 @@ export default function Home() {
                     <div className="aspect-[4/5] bg-gray-700 mb-4 overflow-hidden rounded-lg">
                       <div className="relative w-full h-full">
                         <Image
-                          src="/images/designer-1.jpg)-2vBFWWoBMDZhWwkQ5guZp6UnkePJ1X.jpeg"
+                          src="./images/Man-Strength.jpeg"
                           alt="Man performing strength training with weights"
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -161,7 +173,9 @@ export default function Home() {
                       </div>
                     </div>
                   )}
-                  <h3 className="text-xl font-light text-center">{language === "en" ? classInfo.en : classInfo.am}</h3>
+                  <h3 className="text-xl font-light text-center">
+                    {language === "en" ? classInfo.en : classInfo.am}
+                  </h3>
                 </motion.div>
               </Link>
             ))}
@@ -172,7 +186,9 @@ export default function Home() {
       {/* Contact Us Section */}
       <section className="py-16 bg-gradient-to-br from-gray-900 to-slate-800">
         <div id="footer" className="container mx-auto px-4">
-          <h2 className="text-4xl font-light mb-12 text-center text-white">{t.contactUs}</h2>
+          <h2 className="text-4xl font-light mb-12 text-center text-white">
+            {t.contactUs}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div className="flex flex-col items-center md:items-start space-y-6">
               <motion.div
@@ -232,5 +248,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }
