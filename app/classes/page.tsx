@@ -21,7 +21,7 @@ export default function ClassesPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-900 via-purple-900 to-black opacity-85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-slate-800 to-black opacity-85" />
       </div>
 
       {/* Content */}
@@ -128,7 +128,7 @@ export default function ClassesPage() {
                         </p>
                         <Button
                           onClick={() => setExpandedProgram(index)}
-                          className="w-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300"
+                          className="w-full bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold"
                         >
                           {t.learnMore}
                         </Button>
@@ -184,7 +184,7 @@ export default function ClassesPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300 text-lg px-8 py-6">
+              <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 text-lg px-8 py-6 font-semibold">
                 {t.bookSession}
               </Button>
             </motion.div>

@@ -9,14 +9,14 @@ export default function MathleticPage() {
   const { t } = useLanguage()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 flex items-center justify-center px-4">
       <div className="max-w-3xl w-full space-y-8 bg-gray-800 p-8 rounded-xl text-center">
         <h1 className="text-4xl font-bold text-white mb-4">{t.mathleticTitle}</h1>
         <p className="text-xl text-gray-300 mb-8">{t.mathleticDescription}</p>
 
         <div className="relative w-full h-64 mb-8">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled.jpg-O2je9RqJHwbqyXcdzFW0rN9bAHnC1Y.jpeg"
+            src="/images/untitled.jpeg"
             alt={t.mathleticStoreImage}
             fill
             className="object-cover rounded-lg"
@@ -29,7 +29,7 @@ export default function MathleticPage() {
         <p className="text-lg text-gray-300 mb-6">{t.mathleticContactInfo}</p>
 
         <Link href="/#footer">
-          <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300 flex items-center justify-center">
+          <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 flex items-center justify-center font-semibold">
             {t.mathleticContactUs}
           </Button>
         </Link>

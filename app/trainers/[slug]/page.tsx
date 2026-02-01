@@ -136,7 +136,7 @@ export default function TrainerPage({ params }: { params: { slug: string } }) {
   const isEnglish = language === "en"
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <Link href="/trainers" className="inline-flex items-center text-gray-400 hover:text-white mb-8">
           <ChevronLeft className="w-5 h-5 mr-1" />
@@ -165,7 +165,7 @@ export default function TrainerPage({ params }: { params: { slug: string } }) {
                 href={trainer.tiktok}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors duration-200 flex items-center"
+                className="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center"
               >
                 <FaTiktok className="w-5 h-5 mr-2" />
                 {isEnglish ? "Follow on TikTok" : "በTikTok ላይ ተከተል"}
@@ -174,7 +174,7 @@ export default function TrainerPage({ params }: { params: { slug: string } }) {
                 href={trainer.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:text-blue-300 transition-colors duration-200 flex items-center"
+                className="text-violet-400 hover:text-violet-300 transition-colors duration-200 flex items-center"
               >
                 <Instagram className="w-5 h-5 mr-2" />
                 {isEnglish ? "Follow on Instagram" : "በInstagram ላይ ተከተል"}

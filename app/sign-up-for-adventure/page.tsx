@@ -8,7 +8,7 @@ export default function SignUpForAdventurePage() {
   const { t } = useLanguage()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 flex items-center justify-center px-4">
       <div className="max-w-3xl w-full space-y-8 bg-gray-800 p-8 rounded-xl text-center">
         <h1 className="text-4xl font-bold text-white mb-4">Sign Up for Adventure</h1>
         <div className="bg-yellow-100 border-2 border-yellow-300 rounded-lg p-6 mb-8">
@@ -24,7 +24,7 @@ export default function SignUpForAdventurePage() {
           {t.adventureComingSoon} We can't wait to embark on this journey with you!
         </p>
         <Link href="/#footer">
-          <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300">
+          <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold">
             Contact us - {t.contactUs}
           </Button>
         </Link>

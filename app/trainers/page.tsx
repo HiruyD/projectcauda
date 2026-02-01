@@ -14,7 +14,7 @@ const trainers = [
     nameAm: "አድማሱ",
     specialty: "HIIT & Strength",
     specialtyAm: "HIIT እና ጥንካሬ",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20241212_133012-gRS2tlcwyu0hBt4risk7sVU7rtXKDj.png",
+    image: "/images/20241212-133012.png",
     slug: "admassu",
   },
   {
@@ -33,7 +33,7 @@ const trainers = [
     specialty: "Boxing & Conditioning",
     specialtyAm: "ቦክሲንግ እና አካል ማጎልመሻ",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20241212_132749_Gallery-D1TKEn7Il5I59jhGK1gOLt2Kz1tPc0.png",
+      "/images/screenshot-20241212-132749-gallery.png",
     slug: "solomon",
   },
   {
@@ -52,7 +52,7 @@ const trainers = [
     specialty: "Strength & Nutrition",
     specialtyAm: "ጥንካሬ እና ስነ ምግብ",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-17-12-2024-0001.jpg-dK4RUW3bsyfPwWnc9dHnbq55URfXoK.jpeg",
+      "/images/menarolfitness-17-12-2024-0001.jpeg",
     slug: "bineyam",
   },
   {
@@ -77,10 +77,10 @@ const TrainersPage = () => {
   )
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900">
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-purple-900 opacity-75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-slate-800 opacity-75" />
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -127,18 +127,18 @@ const TrainersPage = () => {
               <Link href={`/trainers/${trainer.slug}`} className="group block">
                 <div className="aspect-square relative mb-4 overflow-hidden bg-gray-700 rounded-lg">
                   <Image
-                    src={trainer.image}
+                    src={trainer.image || "/placeholder.svg"}
                     alt={language === "en" ? trainer.nameEn : trainer.nameAm}
                     width={400}
                     height={400}
                     className="object-cover object-center w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <h2 className="text-2xl font-bold mb-1 text-white group-hover:text-blue-400 transition-colors duration-200">
+                <h2 className="text-2xl font-bold mb-1 text-white group-hover:text-gray-300 transition-colors duration-200">
                   {language === "en" ? trainer.nameEn : trainer.nameAm}
                 </h2>
                 <p className="text-gray-400 mb-2">{language === "en" ? trainer.specialty : trainer.specialtyAm}</p>
-                <span className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                <span className="text-violet-400 hover:text-violet-300 transition-colors duration-200">
                   {t.viewProfile}
                 </span>
               </Link>

@@ -110,7 +110,7 @@ export default function AuthPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 flex items-center justify-center px-4 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 flex items-center justify-center px-4 py-8">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -265,7 +265,7 @@ export default function AuthPage() {
                   Remember me
                 </Label>
               </div>
-              <Link href="/auth/forgot-password" className="text-sm text-blue-400 hover:text-blue-300">
+              <Link href="/auth/forgot-password" className="text-sm text-violet-400 hover:text-violet-300">
                 Forgot password?
               </Link>
             </div>
@@ -274,7 +274,7 @@ export default function AuthPage() {
           <Button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 font-semibold py-3 px-4 rounded-md transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? (
               <div className="flex items-center justify-center">
@@ -333,7 +333,7 @@ export default function AuthPage() {
                   lastName: "",
                 })
               }}
-              className="text-blue-400 hover:text-blue-300 font-medium"
+              className="text-violet-400 hover:text-violet-300 font-medium"
             >
               {isSignUp ? t.signIn : t.signUp}
             </button>

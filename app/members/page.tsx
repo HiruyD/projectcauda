@@ -37,7 +37,7 @@ const tiers = [
   },
   {
     key: "diamond",
-    color: "from-purple-200 to-purple-300",
+    color: "from-violet-200 to-violet-300",
     image:
       "/images/menarolfitness-12-12-2024-0001.jpeg",
     descriptionKey: "diamondDescription",
@@ -48,7 +48,7 @@ export default function MembersPage() {
   const { t } = useLanguage()
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-gray-100">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-gray-100">
       {/* Hero Section */}
       <div className="relative h-[80vh] w-full overflow-hidden">
         <motion.div
@@ -64,7 +64,7 @@ export default function MembersPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-blue-900 opacity-75" />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-slate-800 opacity-75" />
         </motion.div>
 
         {/* Hero Content */}
@@ -89,7 +89,7 @@ export default function MembersPage() {
       </div>
 
       {/* Membership Cards Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-900 to-purple-900">
+      <section className="py-24 bg-gradient-to-br from-slate-800 to-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {tiers.map((tier, index) => (
@@ -105,7 +105,7 @@ export default function MembersPage() {
                   <h3 className="text-3xl font-light mb-6 text-center">{t[`${tier.key}Tier`]}</h3>
                   <p className="text-gray-300 mb-8">{t[`${tier.descriptionKey}`]}</p>
                   <Link href="/auth/signup">
-                    <Button className="w-full bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300">
+                    <Button className="w-full bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold">
                       {t.joinNow}
                     </Button>
                   </Link>

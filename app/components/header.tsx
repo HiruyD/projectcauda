@@ -55,7 +55,7 @@ export default function Header() {
   return (
     <div className="flex flex-col w-full fixed top-0 left-0 right-0 z-50 px-4 py-2">
       <header
-        className={`bg-gradient-to-r from-gray-900 to-blue-900 text-white rounded-full shadow-lg transition-opacity duration-300`}
+        className={`bg-gradient-to-r from-gray-900 to-slate-800 text-white rounded-full shadow-lg transition-opacity duration-300`}
         style={{ opacity: headerOpacity }}
       >
         <div className="container mx-auto">
@@ -130,7 +130,7 @@ export default function Header() {
       </header>
 
       {isOpen && (
-        <div className="md:hidden fixed top-16 left-0 right-0 bottom-0 bg-gradient-to-b from-gray-900 via-blue-900 to-purple-900 text-white overflow-y-auto z-50">
+        <div className="md:hidden fixed top-16 left-0 right-0 bottom-0 bg-gradient-to-b from-gray-900 via-slate-800 to-gray-900 text-white overflow-y-auto z-50">
           <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col space-y-4">
               <Link href="/members" className="text-base md:text-lg hover:text-gray-300" onClick={closeMenu}>
@@ -150,7 +150,7 @@ export default function Header() {
               </Link>
               <hr className="border-gray-800" />
               <Link href="/auth/signup">
-                <Button className="text-base md:text-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300">
+                <Button className="text-base md:text-lg bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold">
                   {t.joinNow}
                 </Button>
               </Link>
@@ -159,7 +159,7 @@ export default function Header() {
                   toggleLanguage()
                   closeMenu()
                 }}
-                className="text-base md:text-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300"
+                className="text-base md:text-lg bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold"
               >
                 {t.languageToggle}
               </Button>

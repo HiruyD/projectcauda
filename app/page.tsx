@@ -22,7 +22,7 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <div className="relative h-screen">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-purple-900 opacity-75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-slate-800 opacity-75" />
         <motion.div
           initial={{ y: 0 }}
           animate={{ y: -20 }}
@@ -60,7 +60,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Link href="/auth/signup">
-              <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300 text-lg px-8 py-6">
+              <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 text-lg px-8 py-6 font-semibold">
                 {t.joinNow}
               </Button>
             </Link>
@@ -69,14 +69,14 @@ export default function Home() {
       </div>
 
       {/* Featured Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-900 to-blue-900">
+      <section className="py-24 bg-gradient-to-br from-gray-900 to-slate-800">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
               <h2 className="text-4xl font-light mb-6 text-white">{t.luxuryFitness}</h2>
               <p className="text-gray-300 mb-8">{t.luxuryFitnessDescription}</p>
               <Link href="/members">
-                <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300">
+                <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold">
                   {t.exploreMemberships}
                 </Button>
               </Link>
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
 
       {/* Classes Preview */}
-      <section className="py-24 bg-gradient-to-br from-blue-900 to-purple-900">
+      <section className="py-24 bg-gradient-to-br from-slate-800 to-gray-900">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-light mb-12 text-center">{t.exceptionalClasses}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -133,7 +133,7 @@ export default function Home() {
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-purple-600/50 group-hover:opacity-75 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-gray-500/50 to-violet-600/30 group-hover:opacity-75 transition-opacity duration-300" />
                       </div>
                     </div>
                   ) : classInfo.en === "HIIT" ? (
@@ -145,7 +145,7 @@ export default function Home() {
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-purple-600/50 group-hover:opacity-75 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-gray-500/50 to-violet-600/30 group-hover:opacity-75 transition-opacity duration-300" />
                       </div>
                     </div>
                   ) : (
@@ -157,7 +157,7 @@ export default function Home() {
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-purple-600/50 group-hover:opacity-75 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-gray-500/50 to-violet-600/30 group-hover:opacity-75 transition-opacity duration-300" />
                       </div>
                     </div>
                   )}
@@ -170,7 +170,7 @@ export default function Home() {
       </section>
 
       {/* Contact Us Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-900 to-blue-900">
+      <section className="py-16 bg-gradient-to-br from-gray-900 to-slate-800">
         <div id="footer" className="container mx-auto px-4">
           <h2 className="text-4xl font-light mb-12 text-center text-white">{t.contactUs}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
@@ -181,7 +181,7 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className="flex items-center space-x-4"
               >
-                <PhoneCall className="text-blue-500 w-6 h-6" />
+                <PhoneCall className="text-gray-400 w-6 h-6" />
                 <div className="text-white">
                   <p>+251 116 687 633</p>
                   <p>+251 902 677 769</p>
@@ -194,7 +194,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex items-center space-x-4"
               >
-                <Mail className="text-blue-500 w-6 h-6" />
+                <Mail className="text-gray-400 w-6 h-6" />
                 <p className="text-white">contact@rue.com</p>
               </motion.div>
               <motion.div
@@ -203,7 +203,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="flex items-center space-x-4"
               >
-                <MapPin className="text-blue-500 w-6 h-6" />
+                <MapPin className="text-gray-400 w-6 h-6" />
                 <div className="text-white">
                   <p>{t.addressText}</p>
                   <p>Fikremariam Aba Techan St, Addis Ababa, Ethiopia</p>
