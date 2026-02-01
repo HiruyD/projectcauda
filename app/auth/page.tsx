@@ -122,7 +122,7 @@ export default function AuthPage() {
             {isSignUp ? t.signUp : t.signIn}
           </h2>
           <p className="text-gray-400">
-            {isSignUp ? "Create your Menarol Fitness account" : "Welcome back to Menarol Fitness"}
+            {isSignUp ? "Create your Rue Fitness account" : "Welcome back to Rue Fitness"}
           </p>
         </div>
 

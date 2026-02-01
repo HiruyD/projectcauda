@@ -30,7 +30,7 @@ export default function Home() {
           className="absolute inset-0"
         >
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edited_gym_image.jpg-JpVF04guOxatXigZ9uZpEXr9uZ7itB.jpeg"
+            src="/images/edited-gym-image.jpeg"
             alt="Dark moody gym interior with dramatic lighting"
             fill
             className="object-cover"
@@ -97,7 +97,7 @@ export default function Home() {
                 aria-label={t.fitnessVideoLabel}
               >
                 <source
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-11-12-2024-0001-zZ6t9P5OMu6YTDvBrGocXq0sY5N0vj.mp4"
+                  src="/images/menarolfitness-11-12-2024-0001.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
@@ -128,7 +128,7 @@ export default function Home() {
                     <div className="aspect-[4/5] bg-gray-700 mb-4 overflow-hidden rounded-lg">
                       <div className="relative w-full h-full">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Designer(1)-2vBFWWoBMDZhWwkQ5guZp6UnkePJ1X.jpeg"
+                          src="/images/designer-1.jpg)-2vBFWWoBMDZhWwkQ5guZp6UnkePJ1X.jpeg"
                           alt="Man performing strength training with weights"
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -140,7 +140,7 @@ export default function Home() {
                     <div className="aspect-[4/5] bg-gray-700 mb-4 overflow-hidden rounded-lg">
                       <div className="relative w-full h-full">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-17-12-2024-0002.jpg-nH0Xi8ntABOqUt7CtBDretUpmmltpK.jpeg"
+                          src="/images/menarolfitness-17-12-2024-0002.jpeg"
                           alt="Group HIIT training session with instructor"
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -152,7 +152,7 @@ export default function Home() {
                     <div className="aspect-[4/5] bg-gray-700 mb-4 overflow-hidden rounded-lg">
                       <div className="relative w-full h-full">
                         <Image
-                          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Designer-3cPjEVzauP2GTwl2xzi2ChfQVRxYBJ.jpeg"
+                          src="/images/designer.jpeg"
                           alt="Woman performing yoga pose in a gym setting"
                           fill
                           className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -195,7 +195,7 @@ export default function Home() {
                 className="flex items-center space-x-4"
               >
                 <Mail className="text-blue-500 w-6 h-6" />
-                <p className="text-white">contact@menarol.com</p>
+                <p className="text-white">contact@rue.com</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -224,8 +224,8 @@ export default function Home() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Menarol Fitness Center Location"
-                aria-label="Google Maps showing the location of Menarol Fitness Center"
+                title="Rue Fitness Center Location"
+                aria-label="Google Maps showing the location of Rue Fitness Center"
               />
             </motion.div>
           </div>

@@ -11,7 +11,7 @@ import app from "./firebase/config"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Menarol Fitness Center",
+  title: "Rue Fitness Center",
   description: "Your ultimate fitness destination",
     generator: 'v0.app'
 }

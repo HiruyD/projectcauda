@@ -13,7 +13,7 @@ const trainers = {
     nameAm: "አድማሱ",
     specialtyEn: "HIIT & Strength",
     specialtyAm: "HIIT እና ጥንካሬ",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20241212_133012-gRS2tlcwyu0hBt4risk7sVU7rtXKDj.png",
+    image: "/images/20241212-133012.png",
     bioEn:
       "Admassu specializes in high-intensity interval training and strength conditioning. With over 8 years of experience, he's helped countless clients achieve their fitness goals through personalized training programs.",
     bioAm:
@@ -32,9 +32,9 @@ const trainers = {
     specialtyAm: "ዮጋ እና ፒላቴስ",
     image: "/placeholder.svg?height=800&width=800",
     bioEn:
-      "Roman is our yoga and Pilates expert, bringing tranquility and core strength to Menarol Fitness. With a decade of experience in mindful movement, he helps clients find balance, flexibility, and inner peace.",
+      "Roman is our yoga and Pilates expert, bringing tranquility and core strength to Rue Fitness. With a decade of experience in mindful movement, he helps clients find balance, flexibility, and inner peace.",
     bioAm:
-      "ሮማን የእኛ የዮጋ እና ፒላቴስ ባለሙያ ነው፣ ለሜናሮል ፊትነስ ሰላምና የሰውነት ጥንካሬ ያመጣል። በአስተውሎት እንቅስቃሴ አשር ዓመት ልምድ ያለው፣ ደንበኞች ሚዛን፣ ተለዋዋጭነት እና የውስጥ ሰላም እንዲያገኙ ይረዳል።",
+      "ሮማን የእኛ የዮጋ እና ፒላቴስ ባለሙያ ነው፣ ለሩ ፊትነስ ሰላምና የሰውነት ጥንካሬ ያመጣል። በአስተውሎት እንቅስቃሴ አשር ዓመት ልምድ ያለው፣ ደንበኞች ሚዛን፣ ተለዋዋጭነት እና የውስጥ ሰላም እንዲያገኙ ይረዳል።",
     certificationsEn: ["Yoga Alliance Certified", "Stott Pilates Certified", "Meditation Instructor"],
     certificationsAm: ["የዮጋ አላያንስ የተመሰከረለት", "ስቶት ፒላቴስ የተመሰከረለት", "የሜዲቴሽን አስተማሪ"],
     expertiseEn: ["Vinyasa Yoga", "Mat Pilates", "Meditation", "Flexibility Training"],
@@ -48,7 +48,7 @@ const trainers = {
     specialtyEn: "Boxing & Conditioning",
     specialtyAm: "ቦክሲንግ እና አካል ማጎልመሻ",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot_20241212_132749_Gallery-D1TKEn7Il5I59jhGK1gOLt2Kz1tPc0.png",
+      "/images/screenshot-20241212-132749-gallery.png",
     bioEn:
       "Solomon brings the fire to our boxing and conditioning programs. As a former professional boxer, he combines technical skill with high-energy workouts to help clients build strength, agility, and confidence.",
     bioAm:
@@ -67,9 +67,9 @@ const trainers = {
     specialtyAm: "ዳንስ እና ካርዲዮ",
     image: "/placeholder.svg?height=800&width=800",
     bioEn:
-      "Mariana brings the joy of movement to Menarol Fitness. With her background in various dance styles and cardio workouts, she creates fun, high-energy classes that keep clients coming back for more.",
+      "Mariana brings the joy of movement to Rue Fitness. With her background in various dance styles and cardio workouts, she creates fun, high-energy classes that keep clients coming back for more.",
     bioAm:
-      "ማሪያና ለሜናሮል ፊትነስ የእንቅስቃሴ ደስታን ታመጣለች። በተለያዩ የዳንስ ዓይነቶች እና የካርዲዮ ልምምዶች ያላት ልምድ፣ ደንበኞችን እንደገና እንዲመጡ የሚያደርጉ አዝናኝ እና ከፍተኛ ሃይል ያላቸው ክፍሎችን ትፈጥራለች።",
+      "ማሪያና ለሩ ፊትነስ የእንቅስቃሴ ደስታን ታመጣለች። በተለያዩ የዳንስ ዓይነቶች እና የካርዲዮ ልምምዶች ያላት ልምድ፣ ደንበኞችን እንደገና እንዲመጡ የሚያደርጉ አዝናኝ እና ከፍተኛ ሃይል ያላቸው ክፍሎችን ትፈጥራለች።",
     certificationsEn: ["Zumba Instructor", "AFAA Group Fitness Instructor", "Dance Therapy Certified"],
     certificationsAm: ["የዙምባ አስተማሪ", "AFAA የቡድን አካል ብቃት አስተማሪ", "የዳንስ ቴራፒ የተመሰከረለት"],
     expertiseEn: ["Zumba", "Cardio Dance", "Rhythm-based Workouts", "Dance Therapy"],
@@ -83,9 +83,9 @@ const trainers = {
     specialtyEn: "Strength & Nutrition",
     specialtyAm: "ጥንካሬ እና ስነ ምግብ",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-17-12-2024-0001.jpg-QQnvernLAS0qq3YToOEBq5zIu1mvPf.jpeg",
+      "/images/menarolfitness-17-12-2024-0001.jpeg",
     video:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-17-12-2024-0002-w8uPtiG5YdTGZpBSMcv6W8GypBKlHs.mp4",
+      "/images/menarolfitness-17-12-2024-0002.mp4",
     bioEn:
       "Bineyam is our strength and nutrition guru. He combines his expertise in weightlifting with deep knowledge of nutrition to help clients build muscle, lose fat, and optimize their overall health.",
     bioAm:

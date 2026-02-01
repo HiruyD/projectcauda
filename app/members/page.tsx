@@ -11,35 +11,35 @@ const tiers = [
     key: "silver",
     color: "from-gray-300 to-gray-400",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-12-12-2024-0001.jpg-W0Fo0esMcG4AavUCxTCbtt0ClX6PSS.jpeg",
+      "/images/menarolfitness-12-12-2024-0001.jpeg",
     descriptionKey: "silverDescription",
   },
   {
     key: "gold",
     color: "from-amber-200 to-amber-300",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-12-12-2024-0001.jpg-W0Fo0esMcG4AavUCxTCbtt0ClX6PSS.jpeg",
+      "/images/menarolfitness-12-12-2024-0001.jpeg",
     descriptionKey: "goldDescription",
   },
   {
     key: "platinum",
     color: "from-gray-100 to-gray-200",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-12-12-2024-0001.jpg-W0Fo0esMcG4AavUCxTCbtt0ClX6PSS.jpeg",
+      "/images/menarolfitness-12-12-2024-0001.jpeg",
     descriptionKey: "platinumDescription",
   },
   {
     key: "sapphire",
     color: "from-blue-200 to-blue-300",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-12-12-2024-0001.jpg-W0Fo0esMcG4AavUCxTCbtt0ClX6PSS.jpeg",
+      "/images/menarolfitness-12-12-2024-0001.jpeg",
     descriptionKey: "sapphireDescription",
   },
   {
     key: "diamond",
     color: "from-purple-200 to-purple-300",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-12-12-2024-0001.jpg-W0Fo0esMcG4AavUCxTCbtt0ClX6PSS.jpeg",
+      "/images/menarolfitness-12-12-2024-0001.jpeg",
     descriptionKey: "diamondDescription",
   },
 ]
@@ -58,7 +58,7 @@ export default function MembersPage() {
           className="absolute inset-0"
         >
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Romes-Website-Design-1.jpg-hxj0Wl9EjyJcO1b1vcSHbCKzbVArFG.jpeg"
+            src="/images/romes-website-design-1.jpeg"
             alt="Luxury spa amenities with rolled towels on wooden shelf"
             fill
             className="object-cover"
@@ -75,7 +75,7 @@ export default function MembersPage() {
             transition={{ duration: 0.8 }}
             className="text-[clamp(2rem,8vw,6rem)] font-bold tracking-wider mb-8"
           >
-            {t.membershipTiers.replace("MENAROL'S ", "")}
+            {t.membershipTiers.replace("RUE'S ", "")}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

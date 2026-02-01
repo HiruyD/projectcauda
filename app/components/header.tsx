@@ -61,7 +61,7 @@ export default function Header() {
         <div className="container mx-auto">
           <nav className="flex items-center justify-between h-20 px-6">
             <Link href="/" className="text-2xl md:text-3xl font-light tracking-wider" onClick={closeMenu}>
-              {language === "en" ? "MENAROL FITNESS" : "ሜናሮል ፊትነስ"}
+              {language === "en" ? "RUE FITNESS" : "ሩ ፊትነስ"}
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">

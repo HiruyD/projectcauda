@@ -21,8 +21,8 @@ const newsAndEvents = [
   },
   {
     title: {
-      en: "Menarol Fitness App Coming Soon!",
-      am: "የሜናሮል ፊትነስ መተግበሪያ በቅርቡ ይመጣል!",
+      en: "Rue Fitness App Coming Soon!",
+      am: "የሩ ፊትነስ መተግበሪያ በቅርቡ ይመጣል!",
     },
     content: {
       en: "We're excited to announce our upcoming fitness app! Track your workouts, access personalized training plans, and connect with our community - all from your smartphone. Stay tuned for the launch date!",
@@ -35,8 +35,8 @@ const newsAndEvents = [
   },
   {
     title: {
-      en: "Introducing Menarol Athletic Wear",
-      am: "የሜናሮል አትሌቲክ ልብሶችን እናስተዋውቃለን",
+      en: "Introducing Rue Athletic Wear",
+      am: "የሩ አትሌቲክ ልብሶችን እናስተዋውቃለን",
     },
     content: {
       en: "Elevate your workout with our new line of high-end athletic wear. Designed for performance, comfort, and style, our collection will help you look and feel your best during every session. Available in our studio soon!",
@@ -69,12 +69,12 @@ export default function NewsAndEventsPage() {
           <div key={index} className="mb-16 pb-16 border-b border-gray-800 last:border-b-0">
             <h2 className="text-3xl font-bold mb-6">{item.title[language]}</h2>
             <p className="text-gray-300 mb-6">{item.content[language]}</p>
-            {item.title.en !== "Menarol Fitness App Coming Soon!" && (
+            {item.title.en !== "Rue Fitness App Coming Soon!" && (
               <Link
                 href={
                   item.title.en === "Annual Outdoor Event"
                     ? "/sign-up-for-adventure"
-                    : item.title.en === "Introducing Menarol Athletic Wear"
+                    : item.title.en === "Introducing Rue Athletic Wear"
                       ? "/mathletic"
                       : "#"
                 }

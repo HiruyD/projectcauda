@@ -23,7 +23,7 @@ export default function Footer() {
             <FaTiktok className="w-6 h-6 hover:text-blue-400 transition-colors duration-300" />
           </a>
         </div>
-        <p>&copy; {new Date().getFullYear()} Menarol Fitness Center. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Rue Fitness Center. All rights reserved.</p>
       </div>
     </footer>
   )

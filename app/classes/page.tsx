@@ -15,7 +15,7 @@ export default function ClassesPage() {
       {/* Background Image */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Picture1.jpg-XHJ8bNqIfutejWRClJ3zECwSWIgg6w.jpeg"
+          src="/images/picture1.jpeg"
           alt="Gym equipment and gloves on dark background"
           fill
           className="object-cover"
@@ -61,20 +61,20 @@ export default function ClassesPage() {
                   title: t.personalTraining,
                   description: t.personalTrainingDescription,
                   video:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-08-12-2024-0001-1iviN4EkhymygSkVw8cTaEhOCjPRkO.mp4",
+                    "/images/menarolfitness-08-12-2024-0001.mp4",
                 },
                 {
                   title: t.beginnerAdvancedYoga,
                   description: t.beginnerAdvancedYogaDescription,
                   expandedDescription: t.beginnerAdvancedYogaExpandedDescription,
                   video:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-12-12-2024-0001(1)-5VILFtq1QEyHo2rvWK2RZLb96CqDN2.mp4",
+                    "/images/menarolfitness-12-12-2024-0001-1.jpg)-5VILFtq1QEyHo2rvWK2RZLb96CqDN2.mp4",
                 },
                 {
                   title: t.hiitZone,
                   description: t.hiitZoneDescription,
                   video:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-16-12-2024-0001-czIwLifLW3wMdR7MnMptp6pgeh5ms2.mp4",
+                    "/images/menarolfitness-16-12-2024-0001.mp4",
                 },
                 {
                   title: {
@@ -86,7 +86,7 @@ export default function ClassesPage() {
                     am: "ገደብዎን ለመግፋት እና የካሎሪ ማቃጠልን ከፍ ለማድረግ የተነደፈ ኃይለኛ የክብደት መቀነስ የብስክሌት ክፍል።",
                   },
                   video:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/menarolfitness-17-12-2024-0001-efBB2e6LXsRP04dE9JH7v7iou6QWTO.mp4",
+                    "/images/menarolfitness-17-12-2024-0001.mp4",
                 },
               ].map((program, index) => (
                 <motion.div
@@ -108,7 +108,7 @@ export default function ClassesPage() {
                       />
                     ) : program.image ? (
                       <Image
-                        src={program.image}
+                        src={program.image || "/placeholder.svg"}
                         alt={program.title}
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -138,12 +138,12 @@ export default function ClassesPage() {
                         <p>
                           {program.title === t.personalTraining
                             ? language === "en"
-                              ? "Our One-on-One Training Program offers personalized fitness coaching tailored to your unique goals and needs. Work closely with our certified trainers to create a customized workout plan, improve technique, and stay motivated. Whether you're looking to build strength, lose weight, or enhance performance, our trainers are here to guide you every step of the way. Perfect for all fitness levels!"
+? "Our One-on-One Training Program offers personalized fitness coaching tailored to your unique goals and needs. Work closely with our certified trainers to create a customized workout plan, improve technique, and stay motivated. Whether you're looking to build strength, lose weight, or enhance performance, our trainers are here to guide you every step of the way. Perfect for all fitness levels!"
                               : "የእኛ አንድ-ለአንድ የስልጠና ፕሮግራም ለእርስዎ ልዩ ግቦች እና ፍላጎቶች የግል የአካል ብቃት የተዘጋጁ ። ከእኛ የተመሰከረላቸው አሰልጣኞች ጋር በቅርበት በመስራት ግላዊ የሆነ የልምምድ እቅድ ይፍጠሩ፣ ቴክኒክዎን ያሻሽሉ እና ተነሳሽነትዎን ይጠብቁ። ጥንካሬ ለመገንባት፣ ክብደት ለመቀነስ ወይም አፈጻጸምዎን ለማሻሻል ቢፈልጉ፣ አሰልጣኞቻችን በእያንዳንዱ እርምጃ ለመምራት እዚህ አሉ። ለሁሉም የአካል ብቃት ደረጃዎች ተስማሚ ነው!"
                             : program.title === t.hiitZone
                               ? language === "en"
                                 ? "Step into the HIITZone for a high-energy, fast-paced workout designed to push your limits! Our High-Intensity Interval Training sessions combine bursts of intense exercise with short recovery periods, maximizing calorie burn and boosting endurance. Perfect for all fitness levels, the HIITZone is where you can challenge yourself, improve strength, and leave feeling empowered. Join us and unleash your potential!"
-                                : "ወደ HIITZone ገብተው ወሰንዎን የሚገፋ ከፍተኛ ሃይል ያለው እና ፈጣን የአካል ብቃት እንቅስቃሴ ያድርጉ! የእኛ ከፍተኛ ጥንካሬ ያለው የአጭር ጊዜ ስልጠና ክፍለ ጊዜዎች ከፍተኛ የሆኑ የአካል ብቃት እንቅስቃሴዎችን ከአጭር የማገገሚያ ጊዜዎች ጋር ያጣምራሉ፣ የካሎሪ ማቃጠልን በማሳደግ እና የመቋቋም አቅምን በማሳደግ። ለሁሉም የአካል ብቃት ደረጃዎች ተስማሚ የሆነው HIITZone እራስዎን መፈታተን፣ ጥንካሬዎን ማሻሻል እና ራስዎን በኃይል የተሞሉ ሆነው ሊሰማዎት የሚችልበት ቦታ ነው። ከእኛ ጋር ይቀላቀሉ እና የእርስዎን ներሥ ያውጡ!"
+                                : "ወደ HIITZone ገብተው ወሰንዎን የሚገፋ ከፍተኛ ሃይል ያለው እና ፈጣን የአካል ብቃት እንቅስቃሴ ያድርጉ! የእኛ ከፍተኛ ጥንካሬ ያለው የአጭር ጊዜ ስልጠና ክፍለ ጊዜዎች ከፍተኛ የሆኑ የአካል ብቃት እንቅስቃሴዎችን ከአጭር የማገገሚያ ጊዜዎች ጋር ያጣምራሉ፣ የካሎሪ ማቃጠልን በማሳደግ እና የመቋቋም አቅምን በማሳደግ። ለሁሉም የአካል ብቃት ደረጃዎች ተስማሚ የሆነው HIITZone እራስዎን መፈታተን፣ ጥንካሬዎን ማሻሻል እና ራስዎን በኃይል የተሞሉ ሆነው ሊሰማዎት የሚችልበት ቦታ ነው። ከእኛ ጋር ይቀላቀሉ እና የእርስዎን ነርዝ ያውጡ!"
                               : program.title === "The Final Spin" ||
                                   program.title.en === "The Final Spin" ||
                                   program.title.am === "የመጨረሻው ዙር"

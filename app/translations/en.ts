@@ -1,7 +1,7 @@
 const en = {
   home: "Home",
   members: "Members",
-  membershipTiers: "MENAROL'S MEMBERSHIP TIERS",
+  membershipTiers: "RUE'S MEMBERSHIP TIERS",
   membershipDescription:
     "Join our community and experience premium fitness with exclusive benefits that grow with your dedication.",
   silverTier: "SILVER",
@@ -20,13 +20,13 @@ const en = {
     "Exclusive member events",
   ],
   silverDescription:
-    "As you reach six months with Menarol Fitness, Silver Membership opens the door to new benefits, including a 6% discount on gym services and spa treatments at Rome Beauty Salon and Spa—and a warm welcome to our team.",
+    "As you reach six months with Rue Fitness, Silver Membership opens the door to new benefits, including a 6% discount on gym services and spa treatments at Rome Beauty Salon and Spa—and a warm welcome to our team.",
   goldDescription:
-    "After a full year of dedication, Gold Membership extends an 8% discount on both gym and spa services at Rome. This tier reflects your consistent commitment and adds meaningful perks to support your continued growth with Menarol.",
+    "After a full year of dedication, Gold Membership extends an 8% discount on both gym and spa services at Rome. This tier reflects your consistent commitment and adds meaningful perks to support your continued growth with Rue.",
   platinumDescription:
     "With two years of dedication to your health and fitness, Platinum Membership rewards you with 12% discount across all gym and 10% discount from spa services. This level stands as a testament to your enduring commitment, offering you higher-tier benefits in recognition of your loyalty.",
   sapphireDescription:
-    "After three years with Menarol, Sapphire Membership brings you a 15% discount on gym and 12% discount from spa services, along with automatic Silver Membership privileges for your family members. This exclusive level not only enhances your own experience but extends the benefits to those closest to you as a gesture of our appreciation.",
+    "After three years with Rue, Sapphire Membership brings you a 15% discount on gym and 12% discount from spa services, along with automatic Silver Membership privileges for your family members. This exclusive level not only enhances your own experience but extends the benefits to those closest to you as a gesture of our appreciation.",
   diamondDescription:
     "Reserved for members with five or more years of unwavering loyalty, Diamond Membership offers a 20% discount on gym and 15% discount on spa services. As an added privilege, referred family members can bypass other levels and start with Gold Membership benefits. This ultimate tier honors your commitment with our highest level of rewards, designed to recognize the invaluable dedication you've shown.",
   classes: "Classes",
@@ -104,7 +104,7 @@ const en = {
   newsAndEventsSubtitle: "Stay updated with our latest news, upcoming events, and exciting announcements.",
   gymOffers: "OUR GYM OFFERS",
   gymOffersDescription:
-    "At Menarol Fitness, members enjoy a comprehensive wellness experience that goes beyond traditional workouts. With access to state-of-the-art gym equipment, diverse classes including aerobics, Afrobeat dance, cultural dance, and even trampoline sessions, members can choose activities that match their fitness goals and personal interests. The facility also offers a steam and sauna area for recovery and relaxation, promoting overall physical and mental well-being. Additionally, the new juice bar provides a convenient, health-focused spot for post-workout refreshment, ensuring members have everything they need to stay motivated, energized, and committed to their wellness journey.",
+    "At Rue Fitness, members enjoy a comprehensive wellness experience that goes beyond traditional workouts. With access to state-of-the-art gym equipment, diverse classes including aerobics, Afrobeat dance, cultural dance, and even trampoline sessions, members can choose activities that match their fitness goals and personal interests. The facility also offers a steam and sauna area for recovery and relaxation, promoting overall physical and mental well-being. Additionally, the new juice bar provides a convenient, health-focused spot for post-workout refreshment, ensuring members have everything they need to stay motivated, energized, and committed to their wellness journey.",
   signInOrSignUp: "Sign In or Sign Up",
   emailAddress: "Email Address",
   password: "Password",
@@ -122,13 +122,13 @@ const en = {
   buildingBetterGym: "Building a Better Gym Experience",
   backToHome: "Back to Home",
   // Mathletic page translations
-  mathleticTitle: "Menarol Athletic Wear",
+  mathleticTitle: "Rue Athletic Wear",
   mathleticDescription: "Elevate your workout with our premium athletic clothing line.",
   mathleticUnderConstruction: "Page Under Construction",
-  mathleticComingSoon: "Our online Menarol Athletic Clothing store is coming soon!",
-  mathleticStoreImage: "Menarol Athletic Clothing store preview",
+  mathleticComingSoon: "Our online Rue Athletic Clothing store is coming soon!",
+  mathleticStoreImage: "Rue Athletic Clothing store preview",
   mathleticStoreComing: "Exciting Athletic Wear Coming Soon",
-  mathleticContactInfo: "For information about purchasing Menarol athletic gear, please contact our front desk.",
+  mathleticContactInfo: "For information about purchasing Rue athletic gear, please contact our front desk.",
   mathleticContactUs: "Contact Us",
   signUpForAdventure: "Sign Up for Adventure",
 }
