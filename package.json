@@ -1,30 +1,36 @@
 {
+  "name": "menarol-gym",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "build": "next build",
-    "build:firebase": "next build && next export",
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
-    "class-variance-authority": "^0.7.1",
+    "class-variance-authority": "0.7.1",
     "clsx": "^2.1.1",
-    "firebase": "latest",
-    "framer-motion": "latest",
-    "lucide-react": "^0.454.0",
-    "next": "15.2.4",
-    "react": "^19",
-    "react-dom": "^19",
-    "react-icons": "latest",
-    "tailwind-merge": "^2.5.5",
-    "tailwindcss-animate": "^1.0.7"
+    "firebase": "12.8.0",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "5.5.0",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
-    "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "postcss": "^8.5",
-    "typescript": "^5"
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.1.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.0"
   }
 }
