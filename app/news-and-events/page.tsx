@@ -56,7 +56,7 @@ export default function NewsAndEventsPage() {
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <div className="relative h-[60vh]">
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-blue-900" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-slate-800" />
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
           <h1 className="text-white text-6xl font-bold mb-6">{t.newsAndEvents}</h1>
           <p className="text-white text-xl max-w-2xl">{t.newsAndEventsSubtitle}</p>
@@ -79,7 +79,7 @@ export default function NewsAndEventsPage() {
                       : "#"
                 }
               >
-                <Button className="bg-blue-500 text-white hover:bg-blue-600 transition-colors duration-300">
+                <Button className="bg-gradient-to-r from-gray-400 to-gray-500 text-gray-900 hover:from-gray-300 hover:to-gray-400 transition-colors duration-300 font-semibold">
                   {item.cta[language]}
                 </Button>
               </Link>
